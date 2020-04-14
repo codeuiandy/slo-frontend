@@ -19,7 +19,8 @@
     "react-moment": "^0.9.7",
     "react-notifications": "^1.6.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-tooltip": "^4.2.3"
   },
   "scripts": {
     "start": "SET NODE_ENV='dev' && react-scripts start",

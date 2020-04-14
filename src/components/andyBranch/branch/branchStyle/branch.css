@@ -1,0 +1,89 @@
+/* 
+
+@media (min-width:770px){
+    .card-body{
+    padding-left: 250px !important;
+    padding-top: 100px !important;
+    }
+} */
+
+.card-header{
+    display: flex;
+}
+
+.card-header .inputf{
+    margin-left: auto;
+}
+
+
+.card .card-header .btn {
+    padding: 0;
+    font-size: 12px;
+    border-radius: 30px;
+    line-height: 30px;
+    border: 1px solid #edeaea;
+    width: 119px;
+    text-align: center;
+    height: 43px;
+    background-color: #012F5D;
+    color: white;
+    
+ 
+}
+.card .card-header .btn :hover{
+    background-color: #012F5D !important;
+    color: white;
+}
+
+.edit{
+    padding: 5px;
+    color: green;
+    cursor: pointer;
+}
+
+.del{
+    color: red;
+    padding: 5px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background-color: white;
+    
+}
+
+.del:disabled{
+    color: grey;
+
+  
+    
+}
+
+
+.search-bt{
+    background-color: #012F5D;
+    margin: 0;
+    border: none;
+    height: 36px;
+    width: 80px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.inputf input
+{
+border: 1px solid #012F5D;
+outline: none;
+height: 35px;
+}
+
+.inputf input::placeholder
+{
+color:  #012F5D;
+padding: 5px;
+font-size: 90%;
+}
+
+.sel{
+    height: 38px !important;
+}
