@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import { httpGet,httpDelete } from '../../../actions/data.action';
 import { hideLoader, showLoader } from '../../../helpers/loader';
 import axios from 'axios'
-import ReactTooltip from "react-tooltip";
-const API_URL = 'http://jsonplaceholder.typicode.com';
-
 
 
 export default class branchTable extends Component {
@@ -29,18 +26,25 @@ export default class branchTable extends Component {
 		//  })
 
 		await this.getBranch();
+			
 	}
 
   getBranch = async () => {
 	  
     try{
 	  const res = await httpGet('all_branch');
-	  showLoader()
+	 
       if(res.code === 200){
-	console.log(res.data.branches)
+		hideLoader()
+	console.log(res)
 	this.setState({ users: res.data.branches})
-	hideLoader()
-      }
+	
+	  }
+	  else{
+		hideLoader() 
+		// alert('network err')
+	
+	  }
     
     } catch (error){
       hideLoader()
@@ -96,6 +100,7 @@ export default class branchTable extends Component {
     render() {
         return (
             <div>
+
                 <div class="table-responsive">
 												<table class="table table-bordered table-hover mb-0 text-nowrap">
 												<thead>
@@ -109,24 +114,25 @@ export default class branchTable extends Component {
 													</thead>
 													{this.state.users.map((user) => (
 														<tbody>
+															
 													<tr key={user.id}>
 												
 														<td>{user.name}</td>
 														<td>{user.region}</td>
 														<td>{user.address}</td>
 														<td>
-                                                            <span class='edit'>Edit</span>
-															<button data-tip="React-tooltip" disabled={this.state.loading?true : false} onClick={() => this.deleteUser(user.id)}
+                                                            <span onClick={()=>this.props.getOneBranch(user.id)} data-toggle="modal" data-target="#exampleModal45" class='edit'>Edit</span>
+															<button  disabled={this.state.loading?true : false} onClick={() => this.deleteUser(user.id)}
 															 class='del '>{this.state.loading?'Loading...' : 'Delete'}</button>
                                                         </td>
 													</tr>
 													</tbody>
 													))}
-													<ReactTooltip place="right" type="warning" effect="float"/>
+												
 												</table>
 											
 											</div>
-											
+									
             </div>
         )
     }

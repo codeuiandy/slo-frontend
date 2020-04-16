@@ -1,0 +1,67 @@
+.pending{
+    display: flex ;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  
+}
+
+.pending h1{
+    font-size: 12px;
+}
+
+.pending h6{
+    font-size: 12px;
+}
+
+.pending button{
+  
+    width: 58px;
+    font-size: 10px;
+    padding: 0px;
+    height: 20px;
+    text-align: center;
+    line-height: 1;
+    margin: 2px;
+}
+
+.checkBoxTab{
+    display: flex;
+   justify-content: flex-start;
+}
+
+.checkBoxTab label{
+    margin-left: 10px;
+}
+
+.checkBoxTab input{
+    margin-top: 3px;
+}
+
+.todo-header h1{
+    font-size: 20px;
+    text-align: start;
+}
+
+.notic-head h1{
+    font-size: 22px;
+}
+
+.notice-list li{
+    padding: 3px 3px 10px 3px ;
+}
+
+.chat-head h1{
+    font-size: 16px;
+    padding-bottom: 0;
+    margin-bottom: 3px;
+}
+
+.chat-info span{
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.chat-text{
+    margin-top: 10px;
+}

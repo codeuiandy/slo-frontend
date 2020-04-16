@@ -12,7 +12,8 @@ import Branch from './components/andyBranch/branch/branch'
 import Department from './components/andyBranch/department/department'
 import Unit from './components/andyBranch/unit/unit'
 import JobType from './components/andyBranch/jobType/jobType'
-
+import PendingActions from './components/andyBranch/Leave/pendingActions'
+import Responsibility from './components/andyBranch/responsibility/responsibilty'
 
 import 'react-notifications/lib/notifications.css';
 
@@ -38,10 +39,14 @@ function App() {
           <Route path="/Department" component={Department} />
           <Route path="/Unit" component={Unit} />
           <Route path="/JobType" component={JobType} />
+          <Route path="/PendingActions" component={PendingActions} />
+          <Route path="/Responsibility" component={Responsibility} />
+
+
         
 
           
-        
+          
           
         </Switch>
       </Router>
