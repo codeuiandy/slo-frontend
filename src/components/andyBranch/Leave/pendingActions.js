@@ -19,6 +19,9 @@ export default class pendingActions extends Component {
 								<div className="col-lg-6 col-xl-6 col-md-6 col-12">
 									<div className="card">
 										<div className="card-body">
+                                        <div className="notic-head text-center">
+                                                <h1>Requests</h1>
+                                                </div>
 											<div className="pending">
 											
 											

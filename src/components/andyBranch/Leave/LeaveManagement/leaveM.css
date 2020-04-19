@@ -1,0 +1,39 @@
+.checkBoxTabP{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    text-align: start;
+    align-items: flex-start;
+    margin-left: -10px;
+}
+
+.checkBoxTa label{
+    margin-right: 5px;
+}
+
+.checkBoxTa input{
+  text-align: center;
+}
+
+.reason{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.reason h1{
+    font-size: 19px;
+    margin-top: 5px;
+}
+.leavepay{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.leavepay label{
+margin-right: 10px;
+margin-bottom: -4px;
+}

@@ -14,11 +14,12 @@ import Unit from './components/andyBranch/unit/unit'
 import JobType from './components/andyBranch/jobType/jobType'
 import PendingActions from './components/andyBranch/Leave/pendingActions'
 import Responsibility from './components/andyBranch/responsibility/responsibilty'
+import Kpi from './components/andyBranch/KPI/kpi'
+import CreateLeave from './components/andyBranch/Leave/createLeave/createLeave'
+import LeaveMangement from './components/andyBranch/Leave/LeaveManagement/leaveManagement'
+import LeaveHistory from './components/andyBranch/leaveHistory/leaveHistory'
 
 import 'react-notifications/lib/notifications.css';
-
-// import "bootstrap/dist/css/bootstrap.css";
-
 function App() {
   return (
       <Router>
@@ -41,9 +42,13 @@ function App() {
           <Route path="/JobType" component={JobType} />
           <Route path="/PendingActions" component={PendingActions} />
           <Route path="/Responsibility" component={Responsibility} />
+          <Route path="/Kpi" component={Kpi} />
+          <Route path="/CreateLeave" component={CreateLeave} />
+          <Route path="/LeaveMangement" component={LeaveMangement} />
+          <Route path="/LeaveHistory" component={LeaveHistory} />
+          
 
-
-        
+          
 
           
           
