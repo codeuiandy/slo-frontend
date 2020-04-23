@@ -12,12 +12,13 @@ import Branch from './components/andyBranch/branch/branch'
 import Department from './components/andyBranch/department/department'
 import Unit from './components/andyBranch/unit/unit'
 import JobType from './components/andyBranch/jobType/jobType'
-import PendingActions from './components/andyBranch/Leave/pendingActions'
+import PendingActions from './components/andyBranch/Leave/pendingAction/pendingActions'
 import Responsibility from './components/andyBranch/responsibility/responsibilty'
 import Kpi from './components/andyBranch/KPI/kpi'
 import CreateLeave from './components/andyBranch/Leave/createLeave/createLeave'
 import LeaveMangement from './components/andyBranch/Leave/LeaveManagement/leaveManagement'
-import LeaveHistory from './components/andyBranch/leaveHistory/leaveHistory'
+import LeaveHistory from './components/andyBranch/Leave/leaveHistory/leaveHistory'
+
 
 import 'react-notifications/lib/notifications.css';
 function App() {

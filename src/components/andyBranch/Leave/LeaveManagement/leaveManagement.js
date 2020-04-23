@@ -57,14 +57,14 @@ export default class LeaveManagement extends Component {
 							</div>
 							<div class="modal-body">
 								<div class="row">
-									<div class="col-md-6">
+									<div class="col-md-6 addi">
 										<p>Staff Name: Okeke Andrew</p>
 										<p>Staff Branch: Aguda Branch</p>
 										<p>Leave Type: Casual Leave</p>
 										<p>Leave Start Date:  14th April 2020</p>
 										<p>Leave End Date:  14th April 2020</p>
 									</div>
-									<div class="col-md-6">
+									<div class="col-md-6 addi">
 									<p>Staff Position: Manager</p>
 										<p>Staff Region: Benin Town</p>
 										<p>Number of days for leave: 10 days</p>

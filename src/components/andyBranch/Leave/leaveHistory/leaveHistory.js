@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Layout from '../.././layout/index'
+import Layout from '../../../layout/index'
 import LeavehistoryTable from './leavehistoryTable'
  import './Lhistory.css'
 
